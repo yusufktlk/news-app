@@ -42,17 +42,17 @@ function Home() {
         
     <div className="flex gap-x-4 mt-24 mb-24">
 
-        <div className="flex flex-col gap-y-24 mx-12 ">
+        <div className="flex flex-col gap-y-24 mx-12 ml-28 ">
             {
                 usNews.map((news,key) => (
                     <div key={key} className="flex gap-x-4">
                         <div>
                             <a href={news.url} target="_blank" rel="noreferrer"><h1 className="text-2xl hover:underline tracking-wider w-[600px] cursor-pointer">{news.title}</h1></a>
-                            <p className="font-thin tracking-widest text-lg mt-6 w-[600px]">{news.abstract}</p>
+                            <p className="font-thin tracking-widest text-lg mt-6 w-[550px]">{news.abstract}</p>
                             <h3 className="font-thin mt-4">{news.byline}</h3>
                             <h5>{news.created_date}</h5>
                         </div>
-                        <a href={news.url} target="_blank" rel="noreferrer"><img src={news.multimedia[0].url} className="w-[500px] h-[300px] hover:opacity-80 duration-500 cursor-pointer" /> </a>
+                        <a href={news.url} target="_blank" rel="noreferrer"><img src={news.multimedia[0].url} className="w-[500px] h-[280px] hover:opacity-80 duration-500 cursor-pointer" /> </a>
                     </div>
                 ))
             }

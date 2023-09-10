@@ -9,6 +9,7 @@ import Fashion from "./pages/Fashion"
 import Movies from "./pages/Movies"
 import Books from "./pages/Books"
 import Arts from "./pages/Arts"
+import Search from "./pages/Search"
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/movies" element={<Movies />} />
             <Route path="/sports" element={<Sports />} />
             <Route path="/technology" element={<Technology />} />
+            <Route path="/search" element={<Search  />} />
           </Routes>
           <Footer />
         </Router>
