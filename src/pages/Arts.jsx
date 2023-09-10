@@ -6,24 +6,24 @@ function Arts() {
     const [arts2,setArts2] = useState([])
 
 
-    const getSports = () => {
+    const getArts = () => {
         const data = axios.get('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=YXk5msAL9qVSUhGbaClNKaXYtEvJq7Ae')
         .then(res=> setArts(res.data.results.splice(3,20)))
     }
     
-    const getSports2 = () => {
+    const getArts2 = () => {
         const data = axios.get('https://api.nytimes.com/svc/topstories/v2/arts.json?api-key=YXk5msAL9qVSUhGbaClNKaXYtEvJq7Ae')
         .then(res=> setArts2(res.data.results.splice(0,3)))
     }
     
         useEffect(() => {
-          getSports()
-          getSports2()
+          getArts()
+          getArts2()
         }, [])
 
   return (
     <div>
-         <h1 className='text-center mt-24 text-5xl font-thin'>The daily diary of the <span className='text-red-600'>Sports!</span></h1>
+         <h1 className='text-center mt-24 text-5xl font-thin'>The daily diary of the <span className='text-red-600'>Arts!</span></h1>
          <p className='text-center mt-12 text-3xl font-thin'>Stay ahead in the game by staying informative and up to date.</p>
         
          <div className='flex mx-20 gap-x-24 mt-24'>
@@ -39,7 +39,7 @@ function Arts() {
         </div>
 
         <hr className='border-2 mt-12' />
-        <h1 className='ml-44 underline text-lg tracking-widest mt-24'>Lates Sports News</h1>
+        <h1 className='ml-44 underline text-lg tracking-widest mt-24'>Lates Arts News</h1>
 
          <div className='flex flex-col mt-10 mx-44 gap-y-12 mb-24'>
               {
