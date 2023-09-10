@@ -23,7 +23,7 @@ function Books() {
 
   return (
     <div>
-         <h1 className='text-center mt-24 text-5xl font-thin'>The daily diary of the <span className='text-red-600'>Movies!</span></h1>
+         <h1 className='text-center mt-24 text-5xl font-thin'>The daily diary of the <span className='text-red-600'>Books!</span></h1>
          <p className='text-center mt-12 text-3xl font-thin'>Stay ahead in the game by staying informative and up to date.</p>
         
          <div className='flex mx-20 gap-x-24 mt-24'>
@@ -39,7 +39,7 @@ function Books() {
         </div>
 
         <hr className='border-2 mt-12' />
-        <h1 className='ml-44 underline text-lg tracking-widest mt-24'>Lates Movies News</h1>
+        <h1 className='ml-44 underline text-lg tracking-widest mt-24'>Lates Books News</h1>
 
          <div className='flex flex-col mt-10 mx-44 gap-y-12 mb-24'>
               {
